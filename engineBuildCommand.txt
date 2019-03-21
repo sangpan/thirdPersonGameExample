@@ -1,0 +1,5 @@
+Engine/Build/BatchFiles/RunUAT.sh BuildGraph -target="Make Installed Build Mac" -script=Engine/Build/InstalledEngineBuild.xml -set:WithWin64=false -set:WithWin32=false -set:WithTVOS=false -set:WithLinux=false -set:WithHTML5=false -set:WithDDC=false -set:WithAndroid=true -set:WithIOS=true
+
+Engine/Build/BatchFiles/RunUAT.sh BuildGraph -target="Make Installed Build Mac" -script=Engine/Build/InstalledEngineBuild.xml -set:HostPlatformOnly=true -set:WithDDC=false -set:WithAndroid=true -set:WithIOS=true
+
+-set:HostPlatformOnly=true
